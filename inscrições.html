@@ -1,0 +1,111 @@
+<link rel = "shortcut icon" type = "image / x-icon" href = " favicon.ico">
+
+<title>Inscrições-EDUTECH</title>
+<canvas width="100" height="50"></canvas>
+ <link rel="stylesheet" href="stylle.css">
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var raio = 7
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(0, 0, 22, 50);
+
+    pincel.fillStyle = 'blue';
+    pincel.fillRect(50, 0, 25, 50);
+    
+
+    pincel.fillStyle = 'bisque';
+    pincel.beginPath();
+    pincel.arc(35, 22, raio, 0, 2*3.13);
+    pincel.fill();
+
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(35, 25);
+    pincel.lineTo(21, 50);
+    pincel.lineTo(50, 50);
+    pincel.fill();
+    
+
+
+</script>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset= "UTF-8"> 
+        <title>Inscrições</title>
+        <style> body {
+
+            background: #000000;
+        }
+        </style>
+    </head>
+    <body>
+    <font color= #FFFFFF>
+
+   <h1 style= "font-size: 30px; text-align: center;">Olá,</h1>
+   <h3 style= "font-size: 30px; text-align: center;">Seja bem-vindo na página de inscrições do curso EDUTECH. Aqui vamos ensinar tudo para você sobre o mundo da programação.</h3>
+   <br>
+    
+
+   <h4  style= "font-size: 30px; text-align: center;"> Para continuar com sua inscrição, preencha todas as informações:</h4>
+
+
+
+<main>
+            <form>
+                <label  for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padaro" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padaro" required placeholder="seuemail@dominio.com">   
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padaro" required placeholder="(XX)XXXXXXXXX">
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padaro" required></textarea>
+                <br>
+                <br>
+
+                <fieldset>
+                    <p>Como prefere nosso contato ?</p>
+                    <label for="radio email"><input type="radio" name="contato" value="email" id="radio email">Email</label>
+                  
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                   
+                    <label for="radio-whatsApp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsApp" checked="">WhatsApp</label>
+                </fieldset>  
+                <br>
+                <br>
+
+<fieldset>
+                   <legend><h3>De acordo com sua turma/série, você irá fazer um curso. Assinale o seu:</h3></legend>
+                   <select>
+                       <option>🕹️ Games e Animações - Nível 1 (6º e 7º Anos)</option>
+                       <option>🎮 Games e Animações - Nível 2 (8º e 9º Anos)</option>
+                       <option>🖥️ FRONT-END com HTML e CSS - 1ª Série Ensino Médio</option>
+                       <option>📱 Desenvolvimento de MOBILE baseado em JavaScript - 2ª Série Ensino Médio</option>
+                       <option>📈 Data Science (Ciência de Dados) - 2ª Série Ensino Médio</option>
+                       <option>☕ Programação em JAVA - 3ª Série Ensino Médio e Técnico</option>
+                       <option>🐍 Programação em Python - 3ª Série Ensino Médio e Técnico</option>
+                   </select>
+                </fieldset>
+                <br>
+                <br>    
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                   <select>
+                       <option>Manhã</option>
+                       <option>Tarde</option>
+                       <option>Noite</option>
+                   </select>
+                </fieldset>    
+
+        
+                <label class="checkbox"><input type="Checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+           <input type="submit" value="Enviar formulario" onclick="location.href='finalizado.html'"class="Enviar">
+           </for>
+        </main> 
+        <buttononclick><a href= atividade1.html><h1 style= "text-align: center" >voltar</h1></buttononclick>
+        </html>

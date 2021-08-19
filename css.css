@@ -1,0 +1,6 @@
+.imagem-html {
+ 	padding: 3em 2;
+	background: linear-gradient(45deg, green, blue, red);
+	text-align: center;
+	width: 100%;
+}

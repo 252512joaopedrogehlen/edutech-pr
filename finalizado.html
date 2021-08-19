@@ -1,0 +1,53 @@
+<link rel = "shortcut icon" type = "image / x-icon" href = " favicon.ico">
+
+<title>EDUTECH- Inscrição Enviada</title>
+<canvas width="100" height="50"></canvas>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var raio = 7
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(0, 0, 22, 50);
+
+    pincel.fillStyle = 'blue';
+    pincel.fillRect(50, 0, 25, 50);
+    
+
+    pincel.fillStyle = 'bisque';
+    pincel.beginPath();
+    pincel.arc(35, 22, raio, 0, 2*3.13);
+    pincel.fill();
+
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(35, 25);
+    pincel.lineTo(21, 50);
+    pincel.lineTo(50, 50);
+    pincel.fill();
+    
+
+
+</script>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset= "UTF-8"> 
+        <title>Inscrições</title>
+        <style> body {
+
+            background: #000000;
+        }
+        </style>
+    </head>
+    <body>
+    <font color= #FFFFFF>
+
+    <h1 style= "font-size: 30px; text-align: center;">Parabéns,</h1>
+    <h3 style= "font-size: 30px; text-align: center;">Sua inscrição foi realizada com sucesso! Fique atento as datas de inicio do curso EDUTECH- Curso de  Programação  </h3>
+    <img src="edutech.png" alt="Logo EDUTECH">
+    <h3 style= "font-size: 30px; text-align: center;">Pautada nas “Diretrizes para Ensino de Computação na Educação Básica”, da Sociedade Brasileira de Computação, e considerando as Competências Gerais da BNCC para a formação do jovem do século XXI, a Secretaria de Estado da Educação e do Esporte, visando a compreensão plena do mundo, cada vez mais conectado e imerso em tecnologias digitais, oportuniza a aprendizagem da programação a crianças, adolescentes e jovens matriculados nas instituições de ensino da Rede Pública Estadual do Paraná, aumentando a capacidade de aprendizagem e resolução de problemas, promovendo novas formas de expressão e pensamento com a utilização de linguagem digital, exercitando a curiosidade intelectual, o pensamento crítico, científico e a criatividade e dando apoio ao aprendizado das demais disciplinas.
+    </h3>
+    <h3 style= "font-size: 30px; text-align: center;">Quer voltar para pagína inicial? Clique <buttonOnclick><a href= atividade1.html>aqui</buttonOnclick><h2>
+</h3>
